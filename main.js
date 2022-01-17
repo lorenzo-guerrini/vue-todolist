@@ -38,7 +38,16 @@ let vue = new Vue({
                 text: "Review editorial calendar",
                 done: true
             }
-        ]
+        ],
+        inputTextValue: ""
     },
-    
+    methods: {
+        addTask: function() {
+            if (this.inputTextValue != "")
+            this.tasks.push({
+                text: this.inputTextValue,
+                done: false
+            })
+        }
+    }
 });

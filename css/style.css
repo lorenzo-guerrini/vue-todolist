@@ -9,6 +9,10 @@ body {
     background-color: #F6F8F9;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* Header */
 header {
     background-color: white;

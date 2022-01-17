@@ -16,8 +16,8 @@
         <main>
 
             <nav>
-                <input type="text" id="inputText">
-                <button id="button-task">Add Task</button>
+                <input type="text" id="inputText" v-model="inputTextValue" @keyup.enter="addTask">
+                <button id="button-task" @click="addTask" >Add Task</button>
             </nav>
 
             <div class="container">
