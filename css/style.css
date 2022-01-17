@@ -58,6 +58,10 @@ nav {
     font-weight: bold;
 }
 
+.task {
+    cursor: pointer;
+}
+
 /* Button task */
 #button-task {
     background-color: #6DA9ED;
@@ -78,7 +82,20 @@ nav {
     padding: 10px;
 }
 
-/* done */
+/* Done */
 .done {
     text-decoration: line-through;
+}
+
+/* Close icon */
+.close-icon {
+    margin-right: 10px;
+}
+
+.fa-times-circle:hover {
+    color: red;
+}
+
+.fa-check-circle:hover {
+    color: green;
 }

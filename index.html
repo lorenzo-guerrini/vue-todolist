@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Toboolist</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -24,8 +25,8 @@
                 <ul id="tasks-container">
                     <!-- <li><span class="check">&#10003;</span> Quarterly Newsletter</li>
                     <li><span class="uncheck">&#215;</span> Interview with John H.</li> -->
-                    <li v-for="(task, index) in tasks" :class="{'done' : task.done}">
-                        {{task.text}}
+                    <li v-for="(task, index) in tasks" class="task">
+                        <i class="close-icon far" :class="(task.done) ?'fa-times-circle' : 'fa-check-circle'" @click="(task.done) ? task.done = false : task.done = true"></i><span :class="{'done' : task.done}">{{task.text}}</span>
                     </li>
                 </ul>
             </div>
