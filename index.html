@@ -1,47 +1,37 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <title>Toboolist</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <img src="img/Logo.png" alt="Toboolist">
-        <span>Toboolist</span>
-    </header>
-    <main>
+    <div id="myApp">
+        <header>
+            <img src="img/Logo.png" alt="Toboolist">
+            <span>Toboolist</span>
+        </header>
+        <main>
 
-        <nav>
-            <button id="button-task">Add Task</button>
-            <button id="button-section">Add Section</button>
-        </nav>
+            <nav>
+                <input type="text" id="inputText">
+                <button id="button-task">Add Task</button>
+            </nav>
 
-        <div class="container">
-            <div class="task">
-                <div class="freccia">&#9660; New Task</div>
-                <div><span class="check">&#10003;</span> Quarterly Newsletter <span class="etichetta editorial">Editorial</span></div>
+            <div class="container">
+                <div class="title">Tasks</div>
+                <div id="tasks-container">
+                    <div><span class="check">&#10003;</span> Quarterly Newsletter</div>
+                    <div><span class="uncheck">&#215;</span> Interview with John H.</div>
+                </div>
             </div>
 
-            <div class="task">
-                <div class="freccia">&#9660; Today</div>
-                <div><span class="check">&#10003;</span> Rectruiting blog post <span class="etichetta editorial">Editorial</span></div>
-                <div><span class="check">&#10003;</span> Mobile app launch <span class="etichetta q1-goals">Q1 Goals</span></div>
-                <div><span class="uncheck">&#215;</span> Interview with John H. <span class="etichetta recruiting">Rectruiting</span></div>
-                <div><span class="check">&#10003;</span> Summit update to mobile storefronts <span class="etichetta mobile">Mobile</span></div>
-            </div>
+        </main>
+    </div>
 
-            <div class="task">
-                <div class="freccia">&#9660; Upcoming</div>
-                <div><span class="uncheck">&#215;</span> Schedule meeting with Alex</div>
-                <div><span class="check">&#10003;</span> Homepage refresh <span class="etichetta website">Website</span></div>
-                <div><span class="check">&#10003;</span> Onboard new Sales team members <span class="etichetta sales">Sales</span></div>
-                <div><span class="check">&#10003;</span> Review editorial calendar <span class="etichetta editorial">Editorial</span></div>
-            </div>
-        
-        
-        
-        </div>
-        
-    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
