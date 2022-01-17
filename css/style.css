@@ -64,6 +64,7 @@ nav {
 
 .task {
     cursor: pointer;
+    user-select: none;
 }
 
 /* Button task */
@@ -96,10 +97,10 @@ nav {
     margin-right: 10px;
 }
 
-.fa-times-circle:hover {
+.task:hover .fa-times-circle {
     color: red;
 }
 
-.fa-check-circle:hover {
+.task:hover .fa-check-circle {
     color: green;
 }

@@ -42,12 +42,13 @@ let vue = new Vue({
         inputTextValue: ""
     },
     methods: {
-        addTask: function() {
+        //Aggiunge task alla lista da variabile input
+        addTask: function () {
             if (this.inputTextValue != "")
-            this.tasks.push({
-                text: this.inputTextValue,
-                done: false
-            })
+                this.tasks.push({
+                    text: this.inputTextValue,
+                    done: false
+                })
         }
     }
 });
