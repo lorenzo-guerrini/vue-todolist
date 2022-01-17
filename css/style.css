@@ -50,6 +50,7 @@ nav {
 
 #tasks-container {
     margin-bottom: 30px;
+    list-style: none;
 }
 
 .title {
@@ -77,27 +78,7 @@ nav {
     padding: 10px;
 }
 
-/* Check e uncheck */
-.check, .uncheck {
-    height: 10px;
-    width: 10px;
-    padding:1px 3px ;  
-    border-style: solid;
-    border-radius: 50%;
-    border-width: 1px; 
-    margin-right: 6px;
-    margin-left: 4px;
-    font-size: 10px;
-    text-align: center;
-    line-height: 10px;
-}
-
-.check {
-    color:green;
-    border-color: green;
-}
-
-.uncheck {
-    color:red;
-    border-color: red;
+/* done */
+.done {
+    text-decoration: line-through;
 }

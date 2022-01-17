@@ -21,10 +21,13 @@
 
             <div class="container">
                 <div class="title">Tasks</div>
-                <div id="tasks-container">
-                    <div><span class="check">&#10003;</span> Quarterly Newsletter</div>
-                    <div><span class="uncheck">&#215;</span> Interview with John H.</div>
-                </div>
+                <ul id="tasks-container">
+                    <!-- <li><span class="check">&#10003;</span> Quarterly Newsletter</li>
+                    <li><span class="uncheck">&#215;</span> Interview with John H.</li> -->
+                    <li v-for="(task, index) in tasks" :class="{'done' : task.done}">
+                        {{task.text}}
+                    </li>
+                </ul>
             </div>
 
         </main>
