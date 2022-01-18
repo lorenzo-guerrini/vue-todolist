@@ -27,15 +27,17 @@
             <div class="container">
                 <div class="title">Tasks</div>
                 <!-- Container task -->
-                <ul id="tasks-container">
-                    
+                <ul id="tasks-container" v-if="tasks.length > 0">
+
                     <!-- Stampa tutte le task in tasks e ne gestisce gli eventi -->
-                    <li v-for="(task, index) in tasks" class="task"
-                        @click="(task.done) ? task.done = false : task.done = true">
-                        <i class="close-icon far" :class="(task.done) ?'fa-times-circle' : 'fa-check-circle'"></i><span
-                            :class="{'done' : task.done}">{{task.text}}</span>
+                    <li v-for="(task, index) in tasks" class="task">
+                        <i class="close-icon far" :class="(task.done) ?'fa-times-circle' : 'fa-check-circle'"
+                            @click="delTask(index)"></i><span :class="{'done' : task.done}"
+                            @click="(task.done) ? task.done = false : task.done = true">{{task.text}}</span>
                     </li>
                 </ul>
+
+                <h2 v-else>Non ci sono task</h2>
             </div>
 
         </main>

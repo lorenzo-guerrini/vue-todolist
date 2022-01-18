@@ -51,6 +51,9 @@ let vue = new Vue({
                 })
             }
             this.inputTextValue = "";
+        },
+        delTask: function (index) {
+            this.tasks.splice(index, 1);
         }
     }
 });

@@ -97,10 +97,10 @@ nav {
     margin-right: 10px;
 }
 
-.task:hover .fa-times-circle {
+.fa-times-circle:hover {
     color: red;
 }
 
-.task:hover .fa-check-circle {
+.fa-check-circle:hover {
     color: green;
 }
