@@ -33,7 +33,7 @@
                     <li v-for="(task, index) in tasks" class="task">
                         <i class="close-icon far" :class="(task.done) ?'fa-times-circle' : 'fa-check-circle'"
                             @click="delTask(index)"></i><span :class="{'done' : task.done}"
-                            @click="(task.done) ? task.done = false : task.done = true">{{task.text}}</span>
+                            @click="task.done = !task.done">{{task.text}}</span>
                     </li>
                 </ul>
 
